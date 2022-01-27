@@ -90,6 +90,7 @@ function App() {
 
         <div className="gif">
           <img
+            alt=""
             style={{ width: 200 }}
             src={selectedGif?.images.preview_gif.url}
           />
