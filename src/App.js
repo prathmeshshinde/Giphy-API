@@ -90,6 +90,7 @@ function App() {
 
         <div className="gif">
           <img
+            alt="img"
             style={{ width: 200 }}
             src={selectedGif?.images.preview_gif.url}
           />
@@ -127,6 +128,7 @@ function App() {
           {gifList.map((gif, index) => {
             return (
               <img
+                alt="listImg"
                 style={{ width: 200 }}
                 className="gifListImg"
                 key={index}
@@ -143,7 +145,7 @@ function App() {
           return (
             <div className="postImg" key={index}>
               {!!sms.url?.length && (
-                <img style={{ width: 200 }} src={sms.url} />
+                <img alt="postImg" style={{ width: 200 }} src={sms.url} />
               )}
               <p>{sms.message}</p>
             </div>
